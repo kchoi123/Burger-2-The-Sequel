@@ -37,15 +37,6 @@ module.exports = function (app) {
     });
   });
 
-  // // GET route for getting all of the burgers
-  // app.get("/api/burgers", function(req, res) {
-  //   // findAll returns all entries for a table when used with no options
-  //   db.Burger.findAll({}).then(function(results) {
-  //     // We have access to the burgers as an argument inside of the callback function
-  //     res.json(results);
-  //   });
-  // });
-
   // POST route for saving a new burger
   app.post("/api/burgers", function (req, res) {
     // create takes an argument of an object describing the item we want to
@@ -65,7 +56,7 @@ module.exports = function (app) {
       });
   });
 
-  // PUT
+  // PUT to change from eat and regurgitate
   app.put("/api/burgers/:id", function (req, res) {
     var condition = "id = " + req.params.id;
     console.log("condition = ", condition);
@@ -90,19 +81,5 @@ module.exports = function (app) {
         res.json(err);
       });
   });
-
-  // DELETE route for deleting burgers. We can get the id of the burger to be deleted from
-  // req.params.id
-  // app.delete("/api/burgers/:id", function (req, res) {
-  //   // We just have to specify which burger we want to destroy with "where"
-  //   db.Burger.destroy({
-  //     where: {
-  //       id: req.params.id
-  //     }
-  //   }).then(function (results) {
-  //     res.json(results);
-  //   });
-
-  // });
 
 };
