@@ -2,6 +2,8 @@
 
 ### Deployed site: 
 
+### This app is the same as the Burger app but with implementing sequelize - replacing ORM, object-relational mapping. This small project was very interesting to better understand ORM and how sequelize makes the app more secure and stable. 
+
 * Application Details: 
     - Eat a burger and regurgitate your burger to eat it again!
     - Eat Me!
