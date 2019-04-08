@@ -1,6 +1,6 @@
 # Burger-2-The-Sequel
 
-### Deployed site: 
+### Deployed site: https://kevinburger2sequel.herokuapp.com/
 
 ### This app is the same as the Burger app but with implementing sequelize - replacing ORM, object-relational mapping. This small project was very interesting to better understand ORM and how sequelize makes the app more secure and stable. 
 
